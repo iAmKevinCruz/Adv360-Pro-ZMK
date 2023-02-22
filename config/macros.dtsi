@@ -2,7 +2,7 @@ macro_inspectdevtools: macro_inspectdevtools{
 compatible = "zmk,behavior-macro";
 label = "macro_inspectdevtools";
 #binding-cells = <0>;
-bindings = <&kp LEFT_GUI>, <&kp LEFT_SHIFT>, <&kp C>;
+bindings = <&macro_tap &kp LEFT_GUI &kp LEFT_CONTROL &kp C>;
 };
 macro_consolelog: macro_consolelog{
 compatible = "zmk,behavior-macro";
