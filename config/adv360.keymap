@@ -33,6 +33,12 @@
           layers = <0>;
       };
 
+      combo_px {
+          timeout-ms = <50>;
+    key-positions = <52 53>;
+          bindings = <&kp P><&kp X>;
+          layers = <3>;
+      };
       combo_esc { 
           timeout-ms = <50>;
           key-positions = <52 53>;
