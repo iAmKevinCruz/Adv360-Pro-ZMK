@@ -23,6 +23,23 @@
 / {
     combos {
       compatible = "zmk,combos";
+      combo_del {
+          timeout-ms = <50>;
+    key-positions = <16 17>;
+          bindings = <&kp J>;
+          layers = <0>;
+      };
+      combo_console_log {
+          timeout-ms = <15>;
+    key-positions = <76 79>;
+          bindings = <&macro_consolelog>;
+      };
+      combo_px {
+          timeout-ms = <50>;
+    key-positions = <53 54>;
+          bindings = <&macro_px>;
+          layers = <3>;
+      };
       combo_esc { 
           timeout-ms = <50>;
           key-positions = <53 54>;
@@ -30,7 +47,7 @@
       };
       combo_3 {
           timeout-ms = <50>;
-          key-positions = <7 8>;
+          key-positions = <66 67>;
           bindings = <&to 3>;
       };
       combo_ent {
@@ -53,23 +70,6 @@
     key-positions = <12 13>;
           bindings = <&kp G>;
           layers = <0>;
-      };
-      combo_del {
-          timeout-ms = <50>;
-    key-positions = <16 17>;
-          bindings = <&kp J>;
-          layers = <0>;
-      };
-      combo_console_log {
-          timeout-ms = <15>;
-    key-positions = <76 79>;
-          bindings = <&macro_consolelog>;
-      };
-      combo_px {
-          timeout-ms = <50>;
-    key-positions = <53 54>;
-          bindings = <&macro_px>;
-          layers = <3>;
       };
       combo_scol {
           timeout-ms = <50>;
@@ -240,7 +240,7 @@
         layer_Layer__4 {
             bindings = <
   &none   &none     &none         &none         &none           &none             &to 0                                                                &to 4      &none   &none         &none   &none          &none   &none
-  &none  &ESC  &kp C_PP    &kp C_PREV    &kp C_NEXT       &td PIPE UNDERSCORE   &none                                                                &none  &kp MINUS  &kp N7        &kp N8  &kp N9  &kp BACKSPACE   &none
+  &none  &kp ESC  &kp C_PP    &kp C_PREV    &kp C_NEXT       &td PIPE UNDERSCORE   &none                                                                &none  &kp MINUS  &kp N7        &kp N8  &kp N9  &kp BACKSPACE   &none
   &none  &td LS(TAB) TAB   &trans  &hm LEFT_SHIFT C_VOL_DN  &hm LGUI C_VOL_UP        &kp PLUS             &none         &none   &none  &trans  &trans   &none          &none   &none  &kp EQUAL  &kp N4        &kp N5  &kp N6      &kp ENTER   &none
   &none  &kp LCTL &kp PRCNT     &kp SLASH       &kp STAR      &kp PERIOD            &trans        &trans   &none  &trans  &trans   &none         &trans  &trans     &kp N0  &kp N1        &kp N2  &kp N3          &to 2   &none
   &none   &none     &none         &none         &none                             &to 0      &kp LGUI   &none                   &none &mt RIGHT_ALT SPACE   &to 1   &none         &none   &none          &none   &none
