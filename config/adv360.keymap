@@ -24,7 +24,7 @@
 
     macros {
         #include "macros.dtsi"
-    }
+    };
 
     combos {
 
