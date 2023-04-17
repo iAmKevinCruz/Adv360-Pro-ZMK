@@ -54,7 +54,7 @@ bindings = <&kp C>, <&kp O>, <&kp N>, <&kp S>, <&kp O>, <&kp L>, <&kp E>, <&kp D
 };
 macro_px: macro_px{
 compatible = "zmk,behavior-macro";
-label = "macro_consolelog";
+label = "macro_px";
 #binding-cells = <0>;
 bindings = <&kp P>, <&kp X>;
 };
