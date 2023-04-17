@@ -32,18 +32,7 @@
           bindings = <&kp DEL>;
           layers = <0>;
       };
-      combo_console_log {
-          timeout-ms = <15>;
-    key-positions = <74 77>;
-          bindings = <&macro_consolelog>;
-          layers = <0>;
-      };
-      combo_px {
-          timeout-ms = <50>;
-    key-positions = <52 53>;
-          bindings = <&macro_px>;
-          layers = <3>;
-      };
+
       combo_esc { 
           timeout-ms = <50>;
           key-positions = <52 53>;
