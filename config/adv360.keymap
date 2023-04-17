@@ -14,7 +14,10 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include "macros.dtsi"
+
+macros {
+    #include "macros.dtsi"
+}
 
 &mt {
     flavor = "tap-preferred";
@@ -23,6 +26,7 @@
 
 / {
     combos {
+
       compatible = "zmk,combos";
       combo_del {
           timeout-ms = <50>;
