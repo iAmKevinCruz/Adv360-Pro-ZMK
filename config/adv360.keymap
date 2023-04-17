@@ -22,28 +22,32 @@
 
 / {
     combos {
+      #include "macros.dtsi"
+
       compatible = "zmk,combos";
       combo_del {
           timeout-ms = <50>;
-    key-positions = <16 17>;
-          bindings = <&kp J>;
+    key-positions = <15 16>;
+          bindings = <&kp DEL>;
           layers = <0>;
       };
       combo_console_log {
           timeout-ms = <15>;
-    key-positions = <76 79>;
+    key-positions = <74 77>;
           bindings = <&macro_consolelog>;
+          layers = <0>;
       };
       combo_px {
           timeout-ms = <50>;
-    key-positions = <53 54>;
+    key-positions = <52 53>;
           bindings = <&macro_px>;
           layers = <3>;
       };
       combo_esc { 
           timeout-ms = <50>;
-          key-positions = <53 54>;
+          key-positions = <52 53>;
           bindings = <&kp ESC>;
+          layers = <0>;
       };
       combo_3 {
           timeout-ms = <50>;
@@ -52,8 +56,9 @@
       };
       combo_ent {
           timeout-ms = <50>;
-    key-positions = <50 51>;
+    key-positions = <49 50>;
           bindings = <&kp RET>;
+          layers = <0>;
       };
       combo_1 {
           timeout-ms = <50>;
@@ -209,10 +214,10 @@
 
         default_layer {
             bindings = <
-  &none   &none   &none   &none   &none   &none               &tog 0                                                                          &to 4   &none   &none      &none    &none            &none   &none  /* 1-14 */
-  &none   &kp Q   &kp W   &kp E   &kp R   &kp T                &none                                                                          &none   &kp Y   &kp U      &kp I    &kp O            &kp P   &none  /* 15-28 */
-  &none   &kp A   &hm LCTL S   &hm LALT D   &hm LGUI F   &kp G                &none           &none   &none   &none   &none   &none                  &none   &none   &kp H   &hm RGUI J      &hm RALT K    &hm RCTL L         &kp SEMI   &none  /* 29-48 */
-  &none   &kp Z   &kp X   &kp C   &kp V   &kp B                &none           &none   &none   &none   &none   &none                  &none   &none   &kp N   &kp M  &td UNDERSCORE COMMA  &td EXCL DOT  &td MINUS SLASH   &none  /* 49-68 */
+  &none   &none   &none   &none   &none   &none               &tog 0                                                                          &to 4   &none   &none      &none    &none            &none   &none  /* 0-13 */
+  &none   &kp Q   &kp W   &kp E   &kp R   &kp T                &none                                                                          &none   &kp Y   &kp U      &kp I    &kp O            &kp P   &none  /* 14-27 */
+  &none   &kp A   &hm LCTL S   &hm LALT D   &hm LGUI F   &kp G                &none           &none   &none   &none   &none   &none                  &none   &none   &kp H   &hm RGUI J      &hm RALT K    &hm RCTL L         &kp SEMI   &none  /* 28-47 */
+  &none   &kp Z   &kp X   &kp C   &kp V   &kp B                &none           &none   &none   &none   &none   &none                  &none   &none   &kp N   &kp M  &td UNDERSCORE COMMA  &td EXCL DOT  &td MINUS SLASH   &none  /* 48-67 */
   &none   &none   &none   &none   &none                       &kp LCTRL &kp LEFT_SHIFT &none                   &none  &mt LC(LS(LALT)) SPACE &tog 1      &none      &none    &none            &none   &none
             >;
         };
@@ -221,8 +226,8 @@
             bindings = <
  &kp F1      &kp F2       &kp F3             &kp F4             &kp F5             &kp F6         &tog 0                                                                  &to 4            &kp F7                &kp F8                 &kp F9            &kp F10        &kp F11  &kp F12
   &none  &kp ESCAPE  &kp AT_SIGN           &kp HASH         &kp DOLLAR        &kp PERCENT         &none                                                                  &none         &kp CARET         &kp AMPERSAND           &kp ASTERISK              &none  &kp BACKSPACE    &none
-  &none   &td LS(TAB) TAB    &kp EQUAL   &kp SINGLE_QUOTE   &kp GRAVE   &kp SINGLE_QUOTE   &none          &trans  &trans   &none   &none  &trans         &trans   &none     &kp BACKSLASH        &kp LEFT_BRACE        &kp RIGHT_BRACE           &kp PIPE      &kp ENTER    &none
-  &none   &kp TILDE       &caps_word  &kp DOUBLE_QUOTES  &kp TILDE  &kp DOUBLE_QUOTES     &none           &none  &trans   &none   &none  &trans         &none   &none  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET          &to 2    &none
+  &none   &td LS(TAB) TAB    &kp EQUAL   &kp GRAVE   &kp SINGLE_QUOTE  &kp SINGLE_QUOTE   &none          &trans  &trans   &none   &none  &trans         &trans   &none     &kp BACKSLASH        &kp LEFT_BRACE        &kp RIGHT_BRACE           &kp PIPE      &kp ENTER    &none
+  &none   &kp TILDE       &caps_word  &kp TILDE  &kp DOUBLE_QUOTES  &kp DOUBLE_QUOTES     &none           &none  &trans   &none   &none  &trans         &none   &none  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET          &to 2    &none
   &none       &none        &none              &none              &none                            &to 0 &kp LEFT_SHIFT &trans             &trans &mt RIGHT_ALT SPACE  &to 3   &none    &none     &none          &none    &none
             >;
         };
