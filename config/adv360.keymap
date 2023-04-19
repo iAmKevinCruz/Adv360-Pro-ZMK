@@ -44,10 +44,23 @@
           bindings = <&kp RET>;
           layers = <0>;
       };
-      combo_3 {
+      combo_backspace {
           timeout-ms = <50>;
-          key-positions = <66 67>;
+    key-positions = <25 26>;
+          bindings = <&kp BACKSPACE>;
+          layers = <0>;
+      };
+      combo_layer_3 {
+          timeout-ms = <50>;
+    key-positions = <64 65>;
           bindings = <&to 3>;
+          layers = <0>;
+      };
+      combo_layer_2 {
+          timeout-ms = <50>;
+          key-positions = <44 45>;
+          bindings = <&to 2>;
+          layers = <0>;
       };
       combo_1 {
           timeout-ms = <50>;
@@ -101,22 +114,22 @@
           bindings = <&kp LBKT>;
           layers = <1>;
       };
+      combo_dollar {
+          timeout-ms = <50>;
+    key-positions = <63 64>;
+          bindings = <&kp DOLLAR>;
+          layers = <0>;
+      };
       combo_n0 {
           timeout-ms = <50>;
-    key-positions = <26 27>;
+    key-positions = <51 52>;
           bindings = <&kp N0>;
-          layers = <2>;
+          layers = <0>;
       };
       combo_lalt {
           timeout-ms = <50>;
     key-positions = <12 13>;
           bindings = <&kp LALT>;
-          layers = <3>;
-      };
-      combo_del {
-          timeout-ms = <50>;
-    key-positions = <22 23>;
-          bindings = <&kp DEL>;
           layers = <3>;
       };
 /*
@@ -186,7 +199,7 @@
         default_layer {
             bindings = <
   &none   &none   &none   &none   &none   &none               &tog 0                                                                          &to 4   &none   &none      &none    &none            &none   &none  /* 0-13 */
-  &none   &kp Q   &kp W   &kp E   &kp R   &kp T                &macro_consolelog                                                                          &none   &kp Y   &kp U      &kp I    &kp O            &kp P   &none  /* 14-27 */
+  &none   &kp Q   &kp W   &kp E   &kp R   &kp T               &macro_consolelog                                                               &none   &kp Y   &kp U      &kp I    &kp O            &kp P   &none  /* 14-27 */
   &none   &kp A   &hm LCTL S   &hm LALT D   &hm LGUI F   &kp G                &none           &none   &none   &none   &none   &none                  &none   &none   &kp H   &hm RGUI J      &hm RALT K    &hm RCTL L         &kp SEMI   &none  /* 28-47 */
   &none   &kp Z   &kp X   &kp C   &kp V   &kp B                &none           &none   &none   &none   &none   &none                  &none   &none   &kp N   &kp M  &td UNDERSCORE COMMA  &td EXCL DOT  &td MINUS SLASH   &none  /* 48-67 */
   &none   &none   &none   &none   &none                       &kp LCTRL &kp LEFT_SHIFT &none                   &none  &mt LC(LS(LALT)) SPACE &tog 1      &none      &none    &none            &none   &none
