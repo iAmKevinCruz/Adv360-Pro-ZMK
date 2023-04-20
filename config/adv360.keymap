@@ -62,58 +62,6 @@
           bindings = <&to 2>;
           layers = <0>;
       };
-      combo_1 {
-          timeout-ms = <50>;
-    key-positions = <30 33>;
-          bindings = <&to 1>;
-      };
-      combo_1_high {
-          timeout-ms = <50>;
-    key-positions = <24 25>;
-          bindings = <&to 1>;
-      };
-      combo_g {
-          timeout-ms = <15>;
-    key-positions = <12 13>;
-          bindings = <&kp G>;
-          layers = <0>;
-      };
-      combo_scol {
-          timeout-ms = <50>;
-    key-positions = <8 9>;
-          bindings = <&kp SEMI>;
-          layers = <0>;
-      };
-      combo_com {
-          timeout-ms = <50>;
-    key-positions = <20 21>;
-          bindings = <&kp COMMA>;
-          layers = <0>;
-      };
-      combo_minus {
-          timeout-ms = <50>;
-    key-positions = <0 1>;
-          bindings = <&kp MINUS>;
-          layers = <0>;
-      };
-      combo_slsh {
-          timeout-ms = <50>;
-    key-positions = <28 29>;
-          bindings = <&kp SLASH>;
-          layers = <0>;
-      };
-      combo_sqt {
-          timeout-ms = <50>;
-    key-positions = <12 13>;
-          bindings = <&kp SQT>;
-          layers = <1>;
-      };
-      combo_lbkt {
-          timeout-ms = <50>;
-    key-positions = <26 27>;
-          bindings = <&kp LBKT>;
-          layers = <1>;
-      };
       combo_dollar {
           timeout-ms = <50>;
     key-positions = <63 64>;
@@ -125,12 +73,6 @@
     key-positions = <51 52>;
           bindings = <&kp N0>;
           layers = <0>;
-      };
-      combo_lalt {
-          timeout-ms = <50>;
-    key-positions = <12 13>;
-          bindings = <&kp LALT>;
-          layers = <3>;
       };
 /*
 *    combo_lclk {
