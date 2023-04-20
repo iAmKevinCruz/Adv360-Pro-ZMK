@@ -54,13 +54,11 @@
           timeout-ms = <50>;
     key-positions = <64 65>;
           bindings = <&to 3>;
-          layers = <0>;
       };
       combo_layer_2 {
           timeout-ms = <50>;
           key-positions = <44 45>;
           bindings = <&to 2>;
-          layers = <0>;
       };
       combo_dollar {
           timeout-ms = <50>;
